@@ -1,16 +1,68 @@
 ---
+import Layout from '../layouts/Layout.astro';
 ---
+<Layout title="SuYi">
+  <div class="avatar">S</div>
+  <h1>SuYi</h1>
+  <div class="subtitle">哈尔滨工业大学 · 航天学院 · 智能材料与结构</div>
+  <div class="tags">
+    <span class="tag">智能材料与结构</span>
+    <span class="tag">科研</span>
+    <span class="tag">游记</span>
+    <span class="tag">随笔</span>
+  </div>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+  <section>
+    <h2>关于</h2>
+    <p>就读于哈尔滨工业大学航天学院智能材料与结构专业。力学与材料科学的交叉地带是主要兴趣所在，关注刺激响应软材料在力场、热场等物理刺激下的变形与响应行为，希望从力学与物理角度理解材料响应背后的微观机制，最终落在性能设计上。</p>
+    <p>科研意向：致力于智能软物质材料研究，探索多场耦合驱动下功能材料的结构设计与性能调控。</p>
+  </section>
+
+  <section>
+    <h2>技能</h2>
+    <div class="chips">
+      <span class="chip">Abaqus 有限元仿真</span>
+      <span class="chip">SolidWorks 结构设计</span>
+      <span class="chip">C 语言程序设计</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>科研项目</h2>
+    <div class="item">
+      <div class="title">促进慢性伤口愈合的多功能微针贴片设计与制备</div>
+      <div class="meta">2024.09 – 2025.07 · 项目负责人</div>
+      <p>将可溶性载药微针集成在水凝胶上，在维持湿性环境的基础上穿透生物膜精准给药，促进慢性伤口愈合；负责材料筛选、SolidWorks / Abaqus 结构设计与仿真、电刺激与自供电模块设计、功能因子纳米酶制备表征。</p>
+    </div>
+    <div class="item">
+      <div class="title">深低温材料界面热阻测试及仿真技术</div>
+      <div class="meta">2025.08 · 中科院上海技术物理研究所 暑期科研实习</div>
+      <p>参与隔热技术对温度变化速率影响方向的研究，通过真空封装等手段抑制装置内部温度变化速率；负责文献调研、提出技术路径、开展热容对温变速率影响的实验测量。</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>获奖</h2>
+    <div class="chips">
+      <span class="chip">安雅奖学金</span>
+      <span class="chip">人民奖学金</span>
+      <span class="chip">一二九优秀学生</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>阅读</h2>
+    <div class="links">
+      <a class="card" href="/travels/">
+        <div class="t">游记</div>
+        <div class="d">走过的地方与见闻</div>
+      </a>
+      <a class="card" href="/essays/">
+        <div class="t">随笔</div>
+        <div class="d">零散的想法与记录</div>
+      </a>
+    </div>
+  </section>
+
+  <footer>© 2026 SuYi</footer>
+</Layout>
